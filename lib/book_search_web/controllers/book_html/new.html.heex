@@ -1,0 +1,8 @@
+<.header>
+  New Book
+  <:subtitle>Use this form to manage book records in your database.</:subtitle>
+</.header>
+
+<.book_form changeset={@changeset} action={~p"/books"} />
+
+<.back navigate={~p"/books"}>Back to books</.back>
