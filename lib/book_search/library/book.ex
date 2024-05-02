@@ -24,4 +24,8 @@ defmodule BookSearch.Library.Book do
     put_change(book_changeset, :embedding, embedding.embedding)
   end
 
+  defimpl String.Chars, for: BookSearch.Library.Book do
+    @spec to_string(%BookSearch.Library.Book{}) :: String.t()
+    def to_string(book), do: "#{book.title} by #{book.author} - #{book.description}\n"
+  end
 end

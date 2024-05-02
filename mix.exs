@@ -54,7 +54,8 @@ defmodule BookSearch.MixProject do
       {:bumblebee, "~> 0.4"},
       {:nx, "~> 0.5"},
       {:exla, "~> 0.5"},
-      {:explorer, "~> 0.5"}
+      {:explorer, "~> 0.5"},
+      {:ollama, "0.6.0"}
     ]
   end
 

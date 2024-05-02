@@ -17,9 +17,9 @@ defmodule BookSearchWeb.SearchLive.Index do
 
   def handle_params(_params, _uri, socket) do
     {:noreply, socket}
-    end
+  end
 
-    @impl true
+  @impl true
   def handle_event("validate_search", %{"search" => _query}, socket) do
     {:noreply, socket}
   end

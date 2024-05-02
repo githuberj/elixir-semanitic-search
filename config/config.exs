@@ -10,6 +10,8 @@ import Config
 config :book_search,
   ecto_repos: [BookSearch.Repo]
 
+config :nx, :default_backend, EXLA.Backend
+
 config :book_search, BookSearch.Repo, types: BookSearch.PostgrexTypes
 
 # Configures the endpoint
