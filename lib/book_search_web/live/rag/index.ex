@@ -8,7 +8,7 @@ defmodule BookSearchWeb.RagLive.Index do
   def mount(_params, _session, socket) do
     dbg("hallo welt")
 
-    {:ok, socket}
+    {:ok, socket |> assign(completion: "", current_request: nil, prompt: "", books: [])}
   end
 
   @impl true
